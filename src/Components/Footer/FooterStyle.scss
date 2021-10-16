@@ -1,0 +1,15 @@
+.footer{
+    background-color:white;
+    height: 60px;
+    .copyright{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        text-transform: capitalize;
+        font-feature-settings: 'calt' off, 'kern' off;
+        color: #2B2B2B;
+        text-align: center;
+    }
+}
