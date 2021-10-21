@@ -1,0 +1,142 @@
+.leftMenu{
+    background-color: white;
+    .hr{
+        width: 220px;
+        margin-bottom: 24px;
+        border: none;
+    }
+    .leftMenu_Top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            border-radius: 50%;
+            margin: 50px 50px 30px 50px;
+        }
+        .name{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 123.6%;
+            text-transform: capitalize;
+            color: #2B2B2B;
+            margin-bottom: 15px;
+        }
+        .profession{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            text-transform: capitalize;
+            font-feature-settings: 'calt' off, 'kern' off;
+            margin-bottom: 15px;
+            color: #767676;
+        }
+        .wrapper_social_links{
+            display: flex;
+            align-items: center;
+            width: 220px;
+            .social_links{
+                background-color: #FFB400;
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                padding: 2px;
+                margin: 5px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .leftMenu_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .Info_list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .Info_list-item{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                .key{
+                    background-color: #FFB400;
+                    padding: 3px 4px;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    font-feature-settings: 'calt' off, 'kern' off;
+                    color: #2B2B2B;
+                }
+                .value{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    font-feature-settings: 'calt' off, 'kern' off;
+                    color: #2B2B2B;
+                }
+                .aviable{
+                    color: #7EB942;
+                }
+            }
+        }
+    }
+    .languages_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 123.6%;
+            text-transform: capitalize;
+            color: #2B2B2B;
+            margin-bottom: 20px;
+        }
+        .language{
+            width: 220px;
+            margin-bottom: 10px;
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0;
+            }
+            .language_name{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                text-transform: capitalize;
+                font-feature-settings: 'calt' off, 'kern' off;
+                color: #767676;
+            }
+            .percentage{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 15px;
+                line-height: 24px;
+                text-transform: capitalize;
+                font-feature-settings: 'calt' off, 'kern' off;
+                color: #767676;
+            }
+        }
+    }
+}

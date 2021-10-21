@@ -4,27 +4,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, useHistory, Switch } from 'react-router-dom'
 import Footer  from "./Components/Footer/Footer";
 import RightMenu from './Components/RightMenu/RightMenu';
+import LeftMenu from './Components/LeftMenu/LeftMenu'
+
 
 const Routing = ()=>{
   return(
     <Switch>
-      <Route path="/" exact>
+      <Route path="/" exact >
         {/* main menu */}
+        <h1>Home</h1>
       </Route>
-      <Route path="/service">
+      <Route path="/service" exact>
         {/* Service */}
+        <h1>Services</h1>
       </Route>
-      <Route path="/edu">
+      <Route path="/edu" exact>
         {/* education */}
+        <h1>education</h1>
       </Route>
       <Route path="/portfolio">
         {/* portfolio */}
+        <h1>portfolio</h1>
       </Route>
-      <Route path="blog">
+      <Route path="/blog">
         {/* blog */}
+        <h1>Blog</h1>
       </Route>
       <Route path="/contact">
         {/* contact */}
+        <h1>contact</h1>
       </Route>
     </Switch>
   )
@@ -32,26 +40,25 @@ const Routing = ()=>{
 function App() {
   return (
     <div className="App">
-      <Container fluid>
-        <Row> 
-          <Col md={3}>
-            {/* Left Sidebar */}
-          </Col>
-          <Col md={8}>
-            {/* Main menu */}
-            <BrowserRouter>
-              <Routing></Routing>
-            </BrowserRouter>
-            <Footer></Footer>
-          </Col>
-          <Col md={1}>
-            {/* Right menu */}
-            <BrowserRouter>
-              <RightMenu/>
-            </BrowserRouter>
-          </Col>
-        </Row>
-      </Container>
+      <BrowserRouter>
+        <Container fluid>
+          <Row> 
+            <Col md={3}>
+              {/* Left Sidebar */}
+              <LeftMenu></LeftMenu>
+            </Col>
+            <Col md={8}>
+              {/* Main menu */}
+                <Routing></Routing>
+              <Footer></Footer>
+            </Col>
+            <Col md={1}>
+              {/* Right menu */}
+                <RightMenu/>
+            </Col>
+          </Row>
+        </Container>
+      </BrowserRouter>
     </div>
   );
 }
