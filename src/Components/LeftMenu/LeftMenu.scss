@@ -1,8 +1,14 @@
 .leftMenu{
     background-color: white;
+    height: 100vh;
+    position: fixed;
+    .overlfow{
+        height: 160px;
+        overflow: auto;
+    }
     .hr{
         width: 220px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         border: none;
     }
     .leftMenu_Top{
@@ -12,7 +18,7 @@
         justify-content: center;
         img{
             border-radius: 50%;
-            margin: 50px 50px 30px 50px;
+            margin: 30px 50px 30px 50px;
         }
         .name{
             font-family: Inter;
@@ -82,7 +88,7 @@
                     font-family: Inter;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 15px;
+                    font-size: 14px;
                     line-height: 24px;
                     text-transform: capitalize;
                     font-feature-settings: 'calt' off, 'kern' off;
@@ -139,4 +145,55 @@
             }
         }
     }
+    .extraSkills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .extraSkills_head{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 123.6%;
+            text-transform: capitalize;
+            color: #2B2B2B;
+            margin-bottom: 15px;
+        }
+        .extraSkills_list{
+            list-style: none;
+            .extraSkills_list-item{
+                margin-bottom: 5px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                text-transform: capitalize;
+                font-feature-settings: 'calt' off, 'kern' off;
+                color: #767676;
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .btnWrapp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .btnDownload{
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: #FFB400;
+            border-radius: 0;
+            padding: 10px 40px;
+            margin-bottom: 25px;
+            width: 220px;
+            height: 40px;
+        }
+    }
+    
 }
