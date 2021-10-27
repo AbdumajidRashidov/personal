@@ -1,0 +1,126 @@
+.home{
+    .main_banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        padding: 18px 60px;
+        margin-bottom: 120px;
+        margin-top: 10px;
+        .main_banner_info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .main_banner_info-head{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 123.6%;
+                color: #2B2B2B;
+                margin-bottom: 25px;
+                span{
+                    color: #FFB400;
+                }
+            }
+            .main_banner_info-paragraph{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: #767676;
+                margin-bottom: 45px;
+            }
+            .hireMe{
+                text-decoration: none;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #2B2B2B;
+                background-color: #FFB400;
+                padding: 16px 32px;
+                width: 155px;
+                display: inline-block;
+            }
+        }
+        .main_banner_img{
+            img{
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+    .my_services{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .my_services-head{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 123.6%;
+            text-transform: capitalize;
+            color: #2B2B2B;
+            margin-bottom: 25px;
+        }
+        .my_services-paragraph{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #767676;
+            width: 440px;
+            margin-bottom: 50px;
+        }
+        .services_list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 70px;
+            .services_list-item{
+                display: flex;
+                width: 30%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                margin: 10px;
+                padding: 25px;
+                text-decoration: none;
+                img{
+                    margin-bottom: 25px;
+                }
+                h4{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 123.6%;
+                    text-transform: capitalize;
+                    color: #2B2B2B;
+                }
+                p{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #767676;
+                }
+            }
+        }
+    }
+
+}
