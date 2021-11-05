@@ -1,9 +1,24 @@
 import React from 'react'
+import { CarouselItem , Carousel, CarouselProps } from 'react-bootstrap'
+import logoNajot from "../../images/Najot_Talim.png"
+import asaxiyLogo from '../../images/asaxiy.png'
 // import myImg from '../../images/myimg-removebg-preview.png'
-import imgSevice from '../../images/Icons/coding.svg'
-import { Rerousel,Item } from 'rerousel';
 import './Home.scss'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 const Home = ()=>{
+    const settings = {
+        dots: false,
+        infinite: true,
+        arrows:false,
+        speed: 1000,
+        autoplay:true,
+        autoplaySpeed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      };
     return(
         <div className="home">
             <div className="main_banner">
@@ -19,53 +34,29 @@ const Home = ()=>{
                     {/* <img src='' alt="myimg"></img> */}
                 </div>
             </div>
-            <div className="my_services">
-                <h2 className="my_services-head">My Services</h2>
-                <p className="my_services-paragraph">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit. lorem ipsum
-                </p>
-                <div className="services_list">
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                    <a className="services_list-item" href="#">
-                        <img src={imgSevice} alt=""></img>
-                        <h4>Web development</h4>
-                        <p>Blog, e-Commerce</p>
-                    </a>
-                </div>
-            </div>
+            
             <div className="partners">
-            <Rerousel >
-                <Item>1</Item>
-                <Item>2</Item>
-                <Item>3</Item>
-                <Item>4</Item>
-                <Item>5</Item>
-            </Rerousel>
+            <Slider {...settings}>
+                <div className="partners_item">
+                    <img width="150" src={logoNajot} alt="logo"></img>
+                </div>
+                <div className="partners_item">
+                    <img width="150" src={asaxiyLogo} alt="logo"></img>
+                </div>
+                <div className="partners_item">
+                    <img width="150" src={logoNajot} alt="logo"></img>
+                </div>
+                <div className="partners_item">
+                    <img width="150" src={asaxiyLogo} alt="logo"></img>
+                </div>
+                <div className="partners_item">
+                    <img width="150" src={logoNajot} alt="logo"></img>
+                </div>
+                <div className="partners_item">
+                    <img width="150" src={asaxiyLogo} alt="logo"></img>
+                </div>
+
+             </Slider>
             </div>
         </div>
     )

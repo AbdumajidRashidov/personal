@@ -1,0 +1,94 @@
+.my_services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    .my_services-head{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 123.6%;
+        text-transform: capitalize;
+        color: #2B2B2B;
+        margin-bottom: 25px;
+    }
+    .my_services-paragraph{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #767676;
+        width: 440px;
+        margin-bottom: 50px;
+    }
+    .services_list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        .services_list-item{
+            width: 30%;
+            height: 225px;
+            background-color: white;
+            margin: 10px;
+            padding: 25px;
+            text-decoration: none;
+            transition: display 2s ease, transform 1s ease;
+            .back{
+                display: none;
+                transform: rotateY(180deg);
+                color: #767676;
+            }
+            .front{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            &:hover{
+                transform:rotateY(180deg);
+                .front{
+                    display: none;
+                }
+                .back{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        color: #FFB400;
+                    }
+                }
+            }
+            
+            img{
+                margin-bottom: 25px;
+            }
+            h4{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 123.6%;
+                text-transform: capitalize;
+                color: #2B2B2B;
+            }
+            p{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #767676;
+            }
+        }
+    }
+}

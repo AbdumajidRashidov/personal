@@ -6,7 +6,9 @@ import Footer  from "./Components/Footer/Footer";
 import Home from './Components/MainMenu/MainMenu';
 import RightMenu from './Components/RightMenu/RightMenu';
 import LeftMenu from './Components/LeftMenu/LeftMenu'
-
+import Service from './Components/Services/Services';
+import Education from './Components/Education/Education';
+import WorkHistory from './Components/Education/WorkHistory';
 
 const Routing = ()=>{
   return(
@@ -17,11 +19,12 @@ const Routing = ()=>{
       </Route>
       <Route path="/service" exact>
         {/* Service */}
-        <h1>Services</h1>
+        <Service></Service>
       </Route>
       <Route path="/edu" exact>
         {/* education */}
-        <h1>education</h1>
+        <Education></Education>
+        <WorkHistory></WorkHistory>
       </Route>
       <Route path="/portfolio">
         {/* portfolio */}

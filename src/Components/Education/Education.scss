@@ -1,0 +1,46 @@
+.edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .eduHeader{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 123.6%;
+        text-transform: capitalize;
+        color: #2B2B2B;
+        margin-top: 20px;
+    }
+    .eduParagraph{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #767676;
+        width: 440px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .eduBox{
+        padding:47px 30px 0 30px;
+        background-color: #fff;
+        margin-bottom: 50px;
+        .eduBox_item{
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            .eduBox_item_left{
+                width: 40%;
+            }
+            .eduBox_item_right{
+                width: 60%;
+            }
+            
+        }
+    }
+}

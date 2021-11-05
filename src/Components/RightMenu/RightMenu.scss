@@ -21,6 +21,13 @@
             background-color: #FFB400;
             transition: all 0.3s ease-in;
         }
+        &:active{
+            background-color: #FFB400;
+        }
+        &:focus{
+            background-color: #FFB400;
+        }
+        
         img{
             width: 18px;
             height: 18px;
