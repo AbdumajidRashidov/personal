@@ -1,7 +1,7 @@
 import './App.css';
 import {Col,Container,Row} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, useHistory, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Footer  from "./Components/Footer/Footer";
 import Home from './Components/MainMenu/MainMenu';
 import RightMenu from './Components/RightMenu/RightMenu';

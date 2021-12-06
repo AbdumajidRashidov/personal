@@ -19,7 +19,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Home!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/"} className="rightMenu_ListItem">
-                            <img src={HomeIcon}></img>
+                            <img alt="homeicon" src={HomeIcon}></img>
                         </Link>
                     </span>
                 </OverlayTrigger>
@@ -28,7 +28,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Services!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/service"} className="rightMenu_ListItem">
-                            <img src={ServiceIcon}></img>
+                            <img src={ServiceIcon} alt="service icon"></img>
                         </Link>
                     </span>
                 </OverlayTrigger>
@@ -37,7 +37,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Education!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/edu"} className="rightMenu_ListItem">
-                            <img src={EduIcon}></img>
+                            <img src={EduIcon} alt="edu icon"></img>
                         </Link>
                     </span>
                 </OverlayTrigger>
@@ -46,7 +46,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Portfolio!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/portfolio"} className="rightMenu_ListItem">
-                            <img src={PortfolioIcon}></img>
+                            <img src={PortfolioIcon} alt="portfolio icon"></img>
                         </Link>
                     </span>
                 </OverlayTrigger>
@@ -55,7 +55,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Blog!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/blog"} className="rightMenu_ListItem">
-                            <img src={BlogIcon}></img>
+                            <img src={BlogIcon} alt="bio icon"></img>
                         </Link>
                     </span>
                 </OverlayTrigger>
@@ -64,7 +64,7 @@ const RightMenu = () =>{
                 <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Contact!</Tooltip>}>
                     <span className="d-inline-block">
                         <Link to={"/contact"} className="rightMenu_ListItem">
-                            <img src={ContactIcon}></img>
+                            <img src={ContactIcon} alt="contact icon"></img>
                         </Link>
                     </span>
                 </OverlayTrigger>

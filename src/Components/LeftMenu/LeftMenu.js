@@ -10,7 +10,7 @@ const LeftMenu = ()=>{
     return(
         <div className="leftMenu">
             <div className="leftMenu_Top">
-                <img src={MyImg} width="150"></img>
+                <img src={MyImg} width="150" alt="person img"></img>
                 <h3 className="name">Abdumajid Rashidov</h3>
                 <p className="profession">Frontend Developer</p>
                 <div className="wrapper_social_links">
@@ -100,18 +100,18 @@ const LeftMenu = ()=>{
             <div className="extraSkills">
                 <h3 className="extraSkills_head">Extra Skills</h3>
                 <ul className="extraSkills_list">
-                    <li className="extraSkills_list-item"><img src={logoExtra}></img> Bootstrap, Materialize</li>
-                    <li className="extraSkills_list-item"><img src={logoExtra}></img> Stylus, Sass, Less</li>
-                    <li className="extraSkills_list-item"><img src={logoExtra}></img> Gulp, Webpack</li>
-                    <li className="extraSkills_list-item"><img src={logoExtra}></img> GIT Knowledge</li>
-                    <li className="extraSkills_list-item"><img src={logoExtra}></img> Mongoose, ExpressJS, MongoDB</li>
+                    <li className="extraSkills_list-item"><img alt="logo" src={logoExtra}></img> Bootstrap, Materialize</li>
+                    <li className="extraSkills_list-item"><img alt="logo" src={logoExtra}></img> Stylus, Sass, Less</li>
+                    <li className="extraSkills_list-item"><img alt="logo" src={logoExtra}></img> Gulp, Webpack</li>
+                    <li className="extraSkills_list-item"><img alt="logo" src={logoExtra}></img> GIT Knowledge</li>
+                    <li className="extraSkills_list-item"><img alt="logo" src={logoExtra}></img> Mongoose, ExpressJS, MongoDB</li>
                 </ul>
                 
             </div>
             </div>
             <div className="btnWrapp">
                 <hr className="hr"></hr>
-                <a href="#" download className="btnDownload">Download CV <i class="fas fa-download"></i></a>
+                <a href="" download className="btnDownload">Download CV <i class="fas fa-download"></i></a>
             </div>
         </div>
 

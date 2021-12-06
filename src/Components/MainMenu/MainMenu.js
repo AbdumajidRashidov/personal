@@ -1,5 +1,4 @@
 import React from 'react'
-import { CarouselItem , Carousel, CarouselProps } from 'react-bootstrap'
 import logoNajot from "../../images/Najot_Talim.png"
 import asaxiyLogo from '../../images/asaxiy.png'
 // import myImg from '../../images/myimg-removebg-preview.png'
