@@ -6,6 +6,18 @@
         height: 160px;
         overflow: auto;
     }
+    .overlfow::-webkit-scrollbar {
+        width: 8px;
+    }
+    .overlfow::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius:0;
+    }
+    .overlfow::-webkit-scrollbar-thumb {
+        background-color:#FFB400;
+    }.overflow {
+        scrollbar-width: thin;
+    }
     .hr{
         width: 220px;
         margin-bottom: 20px;

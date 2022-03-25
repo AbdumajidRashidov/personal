@@ -1,19 +1,19 @@
-import './App.css';
-import {Col,Container,Row} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Footer  from "./Components/Footer/Footer";
-import Home from './Components/MainMenu/MainMenu';
-import RightMenu from './Components/RightMenu/RightMenu';
-import LeftMenu from './Components/LeftMenu/LeftMenu'
-import Service from './Components/Services/Services';
-import Education from './Components/Education/Education';
-import WorkHistory from './Components/Education/WorkHistory';
+import "./App.css";
+import { Col, Container, Row } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
+import Home from "./Components/MainMenu/MainMenu";
+import RightMenu from "./Components/RightMenu/RightMenu";
+import LeftMenu from "./Components/LeftMenu/LeftMenu";
+import Service from "./Components/Services/Services";
+import Education from "./Components/Education/Education";
+import WorkHistory from "./Components/Education/WorkHistory";
 
-const Routing = ()=>{
-  return(
+const Routing = () => {
+  return (
     <Switch>
-      <Route path="/" exact >
+      <Route path="/" exact>
         {/* main menu */}
         <Home></Home>
       </Route>
@@ -39,26 +39,26 @@ const Routing = ()=>{
         <h1>contact</h1>
       </Route>
     </Switch>
-  )
-}
+  );
+};
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Container fluid>
-          <Row> 
-            <Col md={3}>
+          <Row>
+            <Col md={3} style={{ padding: "0" }}>
               {/* Left Sidebar */}
               <LeftMenu></LeftMenu>
             </Col>
-            <Col md={8}>
+            <Col md={8} style={{ paddingLeft: "0" }}>
               {/* Main menu */}
-                <Routing></Routing>
+              <Routing></Routing>
               <Footer></Footer>
             </Col>
             <Col md={1}>
               {/* Right menu */}
-                <RightMenu/>
+              <RightMenu />
             </Col>
           </Row>
         </Container>
